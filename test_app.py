@@ -17,7 +17,7 @@ def test_home_returns_200(client):
 def test_home_message(client):
     response = client.get("/")
     data = response.get_json()
-    assert data["message"] == "this is wrong"
+    assert data["message"] == "Hello, Juliet's World CI/CD!"
     assert data["status"] == "ok"
 
 
